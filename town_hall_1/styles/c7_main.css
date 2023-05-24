@@ -20,41 +20,41 @@ a:focus, a:hover {
 /* Styles for Nav menu */
 #nav_menu ul {
 	list-style-type: none;
-	position: relative;
 	margin: 0;
 	padding: 0;
-}
-#nav_menu ul ul {
-	display: none;
-	position: absolute;
-	top: 100%; 
-}
-#nav_menu ul ul li {
-	float: none;
-}
-#nav_menu ul li:hover > ul {
-	display: block; 
-}
-#nav_menu>ul::after {
-	content: ""; 
-	display: block;
-	clear: both;
+	position: relative;
 }
 #nav_menu ul li {
 	float: left;
 }
 #nav_menu ul li a {
-	display: block;
-	width: 125px;
-	text-align: center;
-	padding: 1em 1em;
-	text-decoration: none;
-	background-color: #800000;
-	color: white;
-	font-weight: bold;
+    display: block;
+    width: 128px;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
 }
-#nav_menu ul li a.current {
+#nav_menu a.current {
 	color: yellow;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 /* the styles for the header */
 header {
@@ -116,7 +116,8 @@ section li {
 
 /* the styles for the article */
 article {
-	padding: .5em 0;
+	padding: .5em;
+	padding-bottom:.5em;
 	border-top: 2px solid #800000;
 	border-bottom: 2px solid #800000;
 }
@@ -131,6 +132,12 @@ article img {
 	float: right;
 	margin: .5em 0 1em 1em;
 	border: 1px solid black;
+	max-width: 220px;
+	min-width: 150px;
+	max-height: 50%;
+	min-height: 40%;
+	height: auto;
+	width: auto;
 }
 
 /* the styles for the aside */
@@ -149,6 +156,7 @@ aside h3 {
 	padding-bottom: .25em;
 }
 aside img {
+	padding-top: 1m;
 	padding-bottom: 1em;
 }
 

@@ -20,8 +20,7 @@ a:focus, a:hover {
 }
 /* the styles for the header */
 header {
-	padding-left:0.105%;
-	padding-right: 0.105%;
+	padding: 1.5em 0 2em 0;
 	border-bottom: 3px solid #931420;
 		background-image: -moz-linear-gradient(
 	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
@@ -42,8 +41,17 @@ header h3 {
 }
 header img {
 	float: left;
-	padding: 0 30px;
+	padding-right: 3.125%;
+	padding-left: 3.125%;
 }
+@media only screen and (max-width: 660px) {
+	header img{
+		float: none;
+		}	
+	header{
+		text-align: center;
+		}
+	}
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
@@ -56,11 +64,10 @@ header img {
 }
 #nav_menu ul li {
 	float: left;
-	width: 13.334%;
 }
 #nav_menu ul li a {
     display: block;
-    width: 13.334;
+    width: 160px;
     text-align: center;
     padding: 1em 0;
     text-decoration: none;
@@ -86,60 +93,70 @@ header img {
     content: "";
     clear: both;
     display: block;
+	width: 100%;
+	
 }
 
 /* the styles for the section */
-main section{
-	width: 54.6875%;
-	padding-right: 2.84%;
-	padding-left: 2.84%;
-}
-#mobile_menu {
-    display: none;
-}
-@media screen and (max-width: 480px) {
- nav {
-        display: none;
-    }
- #mobile_menu {
-        display: block;
-    }
 .slicknav_menu {
-        background-color: #800000 !important;
-    }
-}
+	display:none;
+	}
+@media screen and (max-width: 480px) {
+	 .js .slicknav_menu{
+		display: block;
+		
+	   }
+	 .slicknav_menu{
+		background-color:#800000;
+	   }
+		} 
+	nav {
+		   display: none;
+	   }
+	#mobile_menu {
+		   display: block;
+	   }
+   .slicknav_menu {
+		   background-color: #800000 !important;
+	   }
 @media only screen and (max-width: 660px) {
-header img{
-	float: none;
-	}	
-header{
-	text-align: center;
+	main section h1{
+		font-size: 135%;
+		}
+	main section h2{
+		font-size: 120%;
+		}
+	aside h2 a{
+		font-size: 85%;
+		}
+	section h1{
+		font-size: 125%;
+		}
+	section h2{
+		font-size: 110%;
+		}
+	aside h2{
+		font-size: 110%;
+		}
 	}
-}
-@media only screen and (max-width: 660px) {
-main section h1{
-	font-size: 135%;
-	}
-main section h2{
-	font-size: 120%;
-	}
-aside h2 a{
-	font-size: 85%;
-	}
-section h1{
-	font-size: 125%;
-	}
-section h2{
-	font-size: 110%;
-	}
-aside h2{
-	font-size: 110%;
-	}
+@media only screen and (max-width: 767px){
+	main section{
+		float:none;
+		width:94.32%;
+		}
+	aside{
+		float: none;
+		padding-right:2.84%;
+		width:94.32%;
+		}
 }
 section {
-	width: 60%;
-	float: none;
-	padding: 0 20px 20px 20px;
+	width: 54.6875%;
+	float: right;
+	padding-top:0;
+	padding-bottom:20px;
+	padding-left: 2.083%;
+	padding-right: 2.083%;
 }
 section h1 {
 	font-size: 150%;
@@ -167,6 +184,11 @@ section li {
 }
 
 /* the styles for the article */
+@media only screen and (max-width: 767px){
+	article img {
+	max-width: 30%;
+	}
+}
 article {
 	padding: .5em 0;
 	border-top: 2px solid #800000;
@@ -183,19 +205,24 @@ article img {
 	float: right;
 	margin: .5em 0 1em 1em;
 	border: 1px solid black;
-	max-width: 30%;
-	min-width: 150px;
+	max-width: 40%;
+	min-width:150px;
 }
 
 /* the styles for the aside */
-div{
-	column-count: 2;
+@media only screen and (max-width: 767px){
+	aside div{
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count:2;
+	}
 }
 aside {
-	width: 60%;
-	float: none;
-	padding: 0 20px 20px 20px;
-	
+	width: 22.395%;
+	float: right;
+	padding-bottom:20px;
+	padding-left:2.083%;
+	padding-right:2.083%;
 }
 aside h2 {
 	color: #800000;
