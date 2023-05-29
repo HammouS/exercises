@@ -30,7 +30,23 @@ header {
 	background-image: linear-gradient(
 	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
 }
+figure{
+	float: right;
+	margin-right:none;
+}
+figcaption{
+	display:block;
+	font-weight: bold;
+	padding-top:.25em;
+	margin-bottom:1em;
+	border-bottom:1px solid black;
+}
+@font-face{
+	font-family: Murach;
+	src: url("HARNGTON.TTF");
+}
 header h2 {
+	font-family:Murach;
 	font-size: 175%;
 	color: #800000;
 }
