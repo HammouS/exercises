@@ -120,6 +120,34 @@ section li {
 	padding-bottom: .35em;
 }
 
+figure {
+	margin-top: 1em;
+}
+figcaption {
+	color: #800000;
+}
+table {
+	border-collapse: collapse;
+}
+	
+thead, tfoot {
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+th, td {
+	padding: .2em .7em;
+	text-align: left;
+}
+tfoot th, tfoot td {
+	text-align: right;
+	font-weight: bold;
+}
+.border_bottom {
+	border-bottom: 2px solid #800000;
+}
+.right {
+	text-align: right;
+}
 /* the styles for the article */
 article {
 	padding: .5em 0;
